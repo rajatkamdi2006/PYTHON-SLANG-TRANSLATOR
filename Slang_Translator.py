@@ -13,18 +13,26 @@ slang_dictionary = {
 
 print("-------Welcome to the Slang Translator------\n")
 
-print("Available words in the dictionary :BRB,G2G,IKR,WTF,FR,GOAT,TBH,FYI,LOL,IDK\n")
+while True:
+   print("Available words in the dictionary :BRB,G2G,IKR,WTF,FR,GOAT,TBH,FYI,LOL,IDK\n")
 
-word = input("Enter the slang word to find it's' meaning:").upper()
+   word = input("Enter the slang word to find it's' meaning:").upper()
 
-if word in slang_dictionary:
-	print("The word is in the dictionary.")
-	print("Meaning : ",slang_dictionary[word])
+   if word in slang_dictionary:
+     print("The word is in the dictionary.")
+     
+     print("Meaning : ",sang_dictionary[word])
 	
-else:
-	print("The word is not in the dictionary yet.")	
+   else:
+     print("The word is not in the dictionary yet.")
+     print("-"*30)
+   a = input("Press Enter to continue and 1 to Exit the translator")
+   if a =="1":
+   	break
+   	
+   				
 	
 print("Thanks for using the Slang translator")	
 
-if __name__ == " __main__":
+if __name__ == "__main__":
 	main()

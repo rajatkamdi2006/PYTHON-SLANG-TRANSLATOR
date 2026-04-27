@@ -21,7 +21,7 @@ while True:
    if word in slang_dictionary:
      print("The word is in the dictionary.")
      
-     print("Meaning : ",sang_dictionary[word])
+     print("Meaning : ",slang_dictionary[word])
 	
    else:
      print("The word is not in the dictionary yet.")
